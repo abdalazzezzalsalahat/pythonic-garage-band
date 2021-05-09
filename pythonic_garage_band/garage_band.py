@@ -7,7 +7,7 @@ class Band:
     def __init__(self, name, members):
         self.name = name
         self.members = members
-        Band.band_list.append(self)
+        Band.band_list.append(self.name)
 
     def __str__(self):
         return f"The band {self.name}"
@@ -80,6 +80,5 @@ class Drummer(Musician):
         """This play_solo method from  Drummer."""
         return "rattle boom crash"
 
-
-if __name__ == "__main__":
-  h=Drummer('azooz')
+# if __name__ == "__main__":
+#   h=Drummer('azooz')
